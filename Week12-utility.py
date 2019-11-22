@@ -16,10 +16,12 @@ def LoadFile(File_Name):
 print(LoadFile('Example.txt'))
 
 #C UpdateString
-'''is a function that takes in two strings and an index integer (no return). The function should print a
-string that is the first string modified to replace the character at the index provided with the second
-string. (Remember that strings are immutable, i.e., some_string[5] = 'a' will give you an error.) 
-Here's an example of using this function:
->>> UpdateString("Hello World", "a", 3)
-OUTPUT Helao World'''
+def UpdateString(Initial,Change,Index):
+    stl=[]
+    for i in range(len(Initial)):
+        stl.append(Initial[i])
+    stl[Index]=Change
+    print(''.join(stl))
+         
+    
 
