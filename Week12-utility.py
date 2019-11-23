@@ -42,6 +42,16 @@ def ScoreFinder(List_Names,List_Floats,Name):
     if x>0:
         print("OUTPUT Player not found")
 
-         
+#F Union
+def Union(L_One,L_Two):
+    return (L_One+L_Two)
+
+#G Intersection
+def Intersection(L_One,L_Two):
+    return list(set(L_One).intersection(L_Two))
+
+#H NotIn
+def NotIn(L_One,L_Two):
+    return list(set(L_One).difference(L_Two))+list(set(L_Two).difference(L_One))
     
 
